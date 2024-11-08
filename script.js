@@ -42,9 +42,9 @@ if (mapboxgl.supported()) {
 
         map.setPaintProperty('carbon-absorption-area', 'fill-color', [
             'case',
-            ['<=', ['get', 'tco2e'], 15], '#E0B0FF',   // สีชมพูอ่อน
-            ['<=', ['get', 'tco2e'], 40], '#BA55D3',   // สีม่วงเข้ม
-            '#4B0082'                                  // สีกรมท่า
+            ['<=', ['get', 'tco2e'], 15], '#1E90FF',   // สีน้ำเงิน
+            ['<=', ['get', 'tco2e'], 40], '#8A2BE2',   // สีม่วง
+            '#FF8C00'                                  // สีส้ม
         ]);
     }
 
@@ -59,9 +59,9 @@ if (mapboxgl.supported()) {
 
         map.setPaintProperty('carbon-absorption-area', 'fill-color', [
             'case',
-            ['<=', ['get', 'tco2e'], 300], '#E0B0FF',   // สีชมพูอ่อน
-            ['<=', ['get', 'tco2e'], 700], '#BA55D3',   // สีม่วงเข้ม
-            '#4B0082'                                  // สีกรมท่า
+            ['<=', ['get', 'tco2e'], 300], '#1E90FF',   // สีน้ำเงิน
+            ['<=', ['get', 'tco2e'], 600], '#8A2BE2',   // สีม่วง
+            '#FF8C00'                                  // สีส้ม
         ]);
     }
 
@@ -100,9 +100,9 @@ if (mapboxgl.supported()) {
             paint: {
                 'fill-color': [
                     'case',
-                    ['<=', ['get', 'tco2e'], 15], '#E0B0FF',   // สีชมพูอ่อน
-                    ['<=', ['get', 'tco2e'], 40], '#BA55D3',   // สีม่วงเข้ม
-                    '#4B0082'                                  // สีกรมท่า
+                    ['<=', ['get', 'tco2e'], 15], '#1E90FF',   // สีน้ำเงิน
+                    ['<=', ['get', 'tco2e'], 40], '#8A2BE2',   // สีม่วงเข้ม
+                    '#FF8C00'                                  // สีส้ม
                 ],
                 'fill-opacity': 0.6,
             },
